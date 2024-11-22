@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
@@ -22,7 +22,7 @@
     <!-- Contact Form -->
     <section class="contact">
         <h1>Contact Us</h1>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" action="/index.html">
             <input type="hidden" name="contact" value="contact">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
