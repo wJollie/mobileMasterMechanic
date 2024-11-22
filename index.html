@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Master Mechanic</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- Header -->
@@ -19,29 +19,35 @@
     </header>
 
     <!-- Hero Section -->
+    <div class="hero-wrapper">
     <section class="hero">
-        <h1>We Come To You!</h1>
-        <p>Your one-stop solution for car repairs, detailing, and sales at your doorstep.</p>
-        <button onclick="window.location.href='contact.html'">Contact Us</button>
+        <div class="hero-text">
+            <h1>We Come To You!</h1>
+            <p>Your one-stop solution for car repairs, detailing, and sales at your doorstep.</p>
+            <button onclick="window.location.href='contact.html'">Contact Us</button>
+        </div>
+    </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
         <h2>Our Services</h2>
-        <div class="service-card">
-            <h3>Mobile Master Mechanic</h3>
-            <p>On-site car repairs, diagnostics, and maintenance.</p>
-            <button onclick="window.location.href='services.html'">Learn More</button>
-        </div>
-        <div class="service-card">
-            <h3>Mobile Master Detailing</h3>
-            <p>Professional interior and exterior car detailing.</p>
-            <button onclick="window.location.href='services.html'">Learn More</button>
-        </div>
-        <div class="service-card">
-            <h3>Mobile Master Car Sales</h3>
-            <p>Browse and buy quality used cars.</p>
-            <button onclick="window.location.href='cars.html'">View Cars</button>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Mobile Master Mechanic</h3>
+                <p>On-site car repairs, diagnostics, and maintenance.</p>
+                <button onclick="window.location.href='services.html'">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>Mobile Master Detailing</h3>
+                <p>Professional interior and exterior car detailing.</p>
+                <button onclick="window.location.href='services.html'">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>Mobile Master Car Sales</h3>
+                <p>Browse and buy quality used cars.</p>
+                <button onclick="window.location.href='cars.html'">View Cars</button>
+            </div>
         </div>
     </section>
 
@@ -49,9 +55,8 @@
     <footer>
         <p>&copy; 2024 Mobile Master Mechanic</p>
         <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
+            <a href="https://www.facebook.com/people/Mobile-Master-Mechanic/100070922192207/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/mobile_master_mechanic/" target="_blank">Instagram</a>
         </div>
     </footer>
 </body>
