@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inquiry | Mobile Master Mechanic</title>
+    <link rel="stylesheet" href="inquiry.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Mobile Master Mechanic</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="reviews.html">Reviews</a>
+        </nav>
+    </header>
+
+    <!-- Inquiry Form -->
+    <section class="inquiry">
+        <h1>Car Inquiry Form</h1>
+        <form name="car-inquiry" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="car-inquiry">
+            <input type="hidden" id="car-name" name="car">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message or questions"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mobile Master Mechanic</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Pre-fill the car name from the previous page
+        const params = new URLSearchParams(window.location.search);
+        const carName = params.get('car');
+        if (carName) {
+            document.getElementById('car-name').value = carName;
+        }
+    </script>
+</body>
+</html>
