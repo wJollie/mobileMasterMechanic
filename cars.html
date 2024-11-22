@@ -22,36 +22,36 @@
     <section class="hero">
         <div class="hero-text">
             <h1>Browse Our Cars</h1>
-            <p>Find your next dream car!</p>
+            <p>Find your next dream car with us!</p>
         </div>
     </section>
 
     <!-- Car Listings -->
     <section class="car-listings">
         <div class="car-item">
-            <img src="assets/car1.jpg" alt="Car 1">
+            <img src="assets/car1.jpg" alt="2018 Toyota Camry">
             <div class="car-details">
                 <h2>2018 Toyota Camry</h2>
                 <p>Price: $18,000</p>
-                <button onclick="openForm('2018 Toyota Camry')">Inquire</button>
+                <button onclick="window.location.href='inquiry.html'">Inquire</button>
             </div>
         </div>
 
         <div class="car-item">
-            <img src="assets/car2.jpg" alt="Car 2">
+            <img src="assets/car2.jpg" alt="2020 Honda Accord">
             <div class="car-details">
                 <h2>2020 Honda Accord</h2>
                 <p>Price: $22,000</p>
-                <button onclick="openForm('2020 Honda Accord')">Inquire</button>
+                <button onclick="window.location.href='inquiry.html'">Inquire</button>
             </div>
         </div>
 
         <div class="car-item">
-            <img src="assets/car3.jpg" alt="Car 3">
+            <img src="assets/car3.jpg" alt="2019 Ford Mustang">
             <div class="car-details">
                 <h2>2019 Ford Mustang</h2>
                 <p>Price: $26,000</p>
-                <button onclick="openForm('2019 Ford Mustang')">Inquire</button>
+                <button onclick="window.location.href='inquiry.html'">Inquire</button>
             </div>
         </div>
     </section>
@@ -64,24 +64,5 @@
             <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         </div>
     </footer>
-
-    <script>
-        // JavaScript to open the inquiry form with a dynamic subject
-        function openForm(carName) {
-            const form = document.createElement('form');
-            form.method = 'POST';
-            form.action = '/inquiry.html'; // The Netlify form page
-
-            const hiddenField = document.createElement('input');
-            hiddenField.type = 'hidden';
-            hiddenField.name = 'car';
-            hiddenField.value = carName;
-
-            form.appendChild(hiddenField);
-            document.body.appendChild(form);
-
-            form.submit();
-        }
-    </script>
 </body>
 </html>
